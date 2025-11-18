@@ -5,9 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.myportfolio.api_rest.entity.Techno;
 
-
-
 @Repository
-public interface technoRepository extends JpaRepository<Techno,Integer>{
+public interface TechnoRepository extends JpaRepository<Techno,Integer>{
 
 }

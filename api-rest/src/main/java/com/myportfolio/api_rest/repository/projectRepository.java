@@ -5,11 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.myportfolio.api_rest.entity.Project;
 
-
-
 @Repository
-public interface projectRepository extends JpaRepository<Project,Integer>{
-
-    
+public interface ProjectRepository extends JpaRepository<Project, Integer> {
 
 }

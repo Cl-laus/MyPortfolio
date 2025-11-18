@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.myportfolio.api_rest.entity.Image;
 
-
 @Repository
-public interface imageRepository extends JpaRepository<Image,Integer>{
+public interface ImageRepository extends JpaRepository<Image, Integer> {
 
 }

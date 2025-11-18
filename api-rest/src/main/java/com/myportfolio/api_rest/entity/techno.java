@@ -2,8 +2,13 @@ package com.myportfolio.api_rest.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 
 @Entity
 public class Techno {
@@ -23,7 +28,6 @@ public class Techno {
 
     // Relation Many-to-Many inverse
     @ManyToMany(mappedBy = "technologies")
-    @JsonIgnore
     private List<Project> projects = new ArrayList<>();
 
     // getters & setters
